@@ -1,0 +1,48 @@
+.VisualizerController
+{
+background-color:#0e0d0d;
+color:white;
+display:block;	
+font-family:"Lucida Console";
+padding: 8px;
+border-bottom:5px solid black;
+box-shadow:10px 10px 10px grey;
+
+}
+#animateText {
+    margin: 5%;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: xx-large;
+    letter-spacing: 1vw;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @media only screen and (max-width: 510px) {
+    #animateText {
+      font-size: large;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    #animateText {
+      font-size: medium;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+  
+  
